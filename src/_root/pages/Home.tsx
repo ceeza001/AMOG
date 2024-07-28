@@ -1,4 +1,4 @@
-import { Hero, Roadmap, Anticipate,  Impact, Features, Tokenomics } from "@/components/";
+import { Hero, Roadmap, Anticipate, Tokenomics } from "@/components/";
 
 const Home = () => {
 

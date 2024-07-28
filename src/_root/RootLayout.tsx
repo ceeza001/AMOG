@@ -1,7 +1,5 @@
 import { Outlet, Link } from "react-router-dom";
 
-import { Topbar } from "@/components/";
-
 const RootLayout = () => {
   
   return (
