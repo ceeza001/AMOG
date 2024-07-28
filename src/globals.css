@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Playwrite+AU+VIC:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply box-border list-none p-0 m-0 scroll-smooth;
+  }
+
+  body {
+    @apply max-h-screen w-screen overflow-x-hidden bg-dark-1 text-[#BBC1CD] font-semibold font-inter;
+  }
+}
+
+@layer utilities {
+  /* TYPOGRAPHY */
+  .calligraffitti {
+    font-family: "Calligraffitti", cursive;
+    font-style: normal;
+  }
+  
+  .playwrite {
+    font-family: "Playwrite AU VIC", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+
+  .noto-sans-jp {
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+
+  .abril-fatface {
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .h1-bold {
+    @apply text-[36px] font-bold leading-[140%] tracking-tighter;
+  }
+
+  /* UTILITIES */
+  .invert-white {
+    @apply invert brightness-0 transition;
+  }
+
+  .glassmorphism {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+  }
+
+  .black-glassmorphism {
+    background: rgba(0, 0, 0, 0.48);
+    backdrop-filter: blur(6px);
+  }
+
+  .gradient-text {
+    background: linear-gradient(45deg, #F0A9A3, #FCD167, #F0A9A3);
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: gradientAnimation 5s linear infinite;
+  }
+
+  .gradient-text2 {
+    background: linear-gradient(45deg, #FFFFFF, #FDFDFD, #1D1D1D, #F0F0FD);
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: gradientAnimation 5s linear infinite;
+  }
+
+  .text-stroke {
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(123, 0, 0, 1);
+  }
+
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+
+  .flex-between {
+    @apply flex justify-between items-center;
+  }
+
+  .flex-start {
+    @apply flex justify-start items-center;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+    border-radius: 2px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: #09090a;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #5c5c7b;
+    border-radius: 50px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #7878a3;
+  }
+
+  .common-container {
+    @apply flex flex-col flex-1 items-center gap-10 overflow-scroll py-10 px-5 md:px-8 lg:p-14 custom-scrollbar;
+  }
+
+  .mission {
+    background-image: url('/assets/lush.jpeg');
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    width: 100%; /* Adjust as necessary */
+    /* Adjust as necessary */
+  }
+  
+  /* Home */
+  .home-container {
+    @apply flex flex-col flex-1 items-center gap-10 overflow-scroll custom-scrollbar;
+  }
+
+  /* Topbar */
+  .topbar {
+    @apply fixed top-0 z-[99] w-full w-full flex p-[1rem] justify-between items-center;
+  }
+}
+@layer components {
+  /* SHADCN COMPONENTS */
+  /* Form */
+  .shad-form_label {
+    @apply text-white !important;
+  }
+
+  .shad-form_message {
+    @apply text-red !important;
+  }
+
+  .shad-select {
+    @apply w-[120px] rounded-[0.5rem] p-4 py-2 bg-dark-3 border-[1px] placeholder:text-light-4 focus-visible:ring-1 focus-visible:ring-offset-1 ring-offset-light-1 !important;
+  }
+
+  .shad-input {
+    @apply h-12 bg-dark-4 border-none placeholder:text-light-4 focus-visible:ring-1 focus-visible:ring-offset-1 ring-offset-light-3 !important;
+  }
+
+  .shad-textarea {
+    @apply h-36 bg-dark-3 rounded-xl border-none focus-visible:ring-1 focus-visible:ring-offset-1 ring-offset-light-3 !important;
+  }
+
+  /* Button */
+  .shad-button_CTA {
+    @apply mt-8 p-6 cursor-pointer rounded-tl-[15px] rounded-br-[15px] border border-[#A35ED5] !important;
+    box-shadow: 2px 2px 0 0 #000, 3px 3px 0 0 #A35ED5;
+    
+  }
+  
+  .shad-button {
+    @apply hover:bg-primary-500 text-light-1 flex gap-2 !important;
+  }
+
+  .shad-button_primary {
+    @apply bg-primary-500 text-light-1 flex gap-2 !important;
+  }
+
+  .shad-button_dark_4 {
+    @apply h-12 bg-dark-4 px-5 text-light-1 flex gap-2 !important;
+  }
+
+  .shad-button_ghost {
+    @apply flex gap-4 items-center justify-start hover:bg-transparent hover:text-white !important;
+  }
+}
