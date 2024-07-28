@@ -42,7 +42,7 @@ const Hero = () => {
           <p className="text-[#FCD167] my-4">CA:</p>
 
           <div className="flex items-center gap-8 justify-between w-full">
-            <Link to="/" className="rounded-[25px] bg-white bg-[#FCD167] text-black font-bold p-[0.8rem]">
+            <Link to="/" className="rounded-[25px] border bg-primary-500 text-black font-bold p-[0.8rem]">
               Buy $moggs
             </Link>
             <Link to="/">

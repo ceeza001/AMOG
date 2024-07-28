@@ -17,7 +17,7 @@ module.exports = {
     // your existing config
     extend: {
       colors: {
-        'primary-500': '#A35ED5',
+        'primary-500': '#FCD167',
         'primary-600': '#CD0300',
         'secondary-500': '#FFB620',
         'off-white': '#D0DFFF',
