@@ -11,16 +11,16 @@ const Hero = () => {
         <div className="rounded-lg h-[4rem] w-[4rem] border-4 bg-black border-[#FCD167]">
           <img 
             src="/assets/mogg.jpg"
-            alt="mogg"
+            alt="AMOG"
             className="w-full h-full"
           />
         </div>
 
-        <h2 className="font-bold text-[1rem] text-[#FCD167]">Moggs</h2>
+        <h2 className="font-bold text-[1rem] text-[#FCD167]">AMOG</h2>
       </div>
       
       <motion.h1 className="mt-4 text-center text-white text-[3rem] playwrite">
-        $moggs
+        $AMOG
       </motion.h1>
       
       <div className="p-[2rem] md:p-[4rem] w-full z-50 flex flex-col gap-10 md:flex-row justify-between items-center">
@@ -32,7 +32,7 @@ const Hero = () => {
           className="w-full max-w-[30rem] flex items-center justify-center rounded-lg border-4">
           <img 
             src="/assets/mogg.jpg" 
-            alt="mogg" 
+            alt="AMOG" 
             className="w-full aspect-square"
           />
         </motion.div>
@@ -43,7 +43,7 @@ const Hero = () => {
 
           <div className="flex items-center gap-8 justify-between w-full">
             <Link to="/" className="rounded-[25px] border bg-primary-500 text-black font-bold p-[0.8rem]">
-              Buy $moggs
+              Buy $AMOG
             </Link>
             <Link to="/">
                 <img 

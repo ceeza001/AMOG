@@ -9,13 +9,13 @@ const RootLayout = () => {
         <Outlet />
         
         <footer className="mt-[4rem] p-[1rem] md:p-[2rem] bg-black">
-          <h2 className="font-bold text-[40px] text-white">$moggs</h2>
+          <h2 className="font-bold text-[40px] text-white">$AMOG</h2>
 
           <div className="flex flex-wrap md:flex-nowrap gap-2 md:gap-10 items-start justify-between">
             <div className="w-full">
               <h3 className="mb-4 font-bold text-white text-[20px]">Risk Warning and Disclaimer</h3>
               <p>
-                Investment in memecoins such as Moggs Token carries inherent risks and should be approached with caution; always conduct thorough research and seek professional advice, as the value can be highly volatile and subject to sudden fluctuations, with past performance not indicative of future results.
+                Investment in memecoins such as AMOG Token carries inherent risks and should be approached with caution; always conduct thorough research and seek professional advice, as the value can be highly volatile and subject to sudden fluctuations, with past performance not indicative of future results.
               </p>
             </div>
 
@@ -37,7 +37,7 @@ const RootLayout = () => {
           <div className="flex flex-col justify-center items-center text-center w-full">
             <h2 className="text-[#FCD167]">CA:</h2>
 
-            <p>©Moggs 2024</p>
+            <p>©AMOG 2024</p>
           </div>
           
         </footer>

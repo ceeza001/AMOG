@@ -1,11 +1,11 @@
 export const tokenomics = [
   {
     title: "Token Name",
-    content: "Moggs",
+    content: "AMOG",
   },
   {
     title: "Symbol",
-    content: "$moggs",
+    content: "$AMOG",
   },
   {
     title: "Total Supply",
@@ -26,11 +26,11 @@ export const roadmaps = [
   {
     id: 2,
     title: "Go to Raydium or Jupiter",
-    step: "Visit raydium.io or jup.ag in Google Chrome or use the browser within your Phantom app. Connect your wallet, paste the moggs token address into Raydium or Jupiter, and confirm the swap. When prompted by Phantom for a wallet signature, sign it."
+    step: "Visit raydium.io or jup.ag in Google Chrome or use the browser within your Phantom app. Connect your wallet, paste the AMOG token address into Raydium or Jupiter, and confirm the swap. When prompted by Phantom for a wallet signature, sign it."
   },
   {
     id: 3,
-    title: "Swap SOL for moggs",
-    step: "Exchange your SOL for moggs. Since we have ZERO taxes, you don't need to worry about specific slippage settings, although slippage may be required during market volatility."
+    title: "Swap SOL for AMOG",
+    step: "Exchange your SOL for AMOG. Since we have ZERO taxes, you don't need to worry about specific slippage settings, although slippage may be required during market volatility."
   },
 ];

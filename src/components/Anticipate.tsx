@@ -4,7 +4,7 @@ const Anticipate = () => {
   return (
     <div className="p-[1rem] md:p-[4rem] w-full">
       <div className="text-white w-full text-center">
-        <h1 className="font-bold text-[50px] md:text-[4rem]">$moggs On SOL
+        <h1 className="font-bold text-[50px] md:text-[4rem]">$AMOG On SOL
         </h1>
         <h2 className="font-semibold text-[25px] md:text-[4rem] gradient-text">A MEME AND MORE
         </h2>
@@ -37,7 +37,7 @@ const Anticipate = () => {
         
         <div className="w-full font-medium text-[15px]">
           <p>
-            Yooo, what's good! Welcome to Moggs, the Solana meme project where we're all about embracing our inner glow-up. We're talkin' looksmaxing, self-love, and a whole lot of sass. Our memes are all about celebratin' what makes you uniquely fire, and roastin' the haters who say otherwise. So, if you're ready to join the Mogg movement and spread some confidence and humor, you're in the right place!
+            Yooo, what's good! Welcome to AMOG, the Solana meme project where we're all about embracing our inner glow-up. We're talkin' looksmaxing, self-love, and a whole lot of sass. Our memes are all about celebratin' what makes you uniquely fire, and roastin' the haters who say otherwise. So, if you're ready to join the AMOG movement and spread some confidence and humor, you're in the right place!
           </p>
           
         </div>
