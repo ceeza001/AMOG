@@ -1,9 +1,9 @@
-import { roadmaps } from "@/constants"
 import { motion } from "framer-motion"
-
+import { BackgroundBeams } from "@/components/ui/background-beams";
+ 
 const Roadmap = () => {
   return (
-    <div className="w-full p-[1rem] md:px-[4rem] pointer-events-none">
+    <div className="relative rounded-lg bg-dark-2 p-4 w-full pointer-events-none">
       <div className="text-white w-full text-center mx-auto md:w-2/5">
         <motion.h1 
           initial={{ opacity: 0, x: -100 }}
@@ -11,26 +11,137 @@ const Roadmap = () => {
           transition={{ delay: 0, duration: 1.2, ease: "easeInOut"}}
           viewport={{ once: true }}
           className="font-bold text-[50px]">
-          How To Buy
+          Roadmap
         </motion.h1>
       </div>
-      <div className="mt-8 flex gap-4 flex-wrap md:flex-nowrap justify-between items-start">
-        {roadmaps.map((roadmap, i) => (
-          <motion.div 
-            key={i} 
-            initial={{ opacity: 0, x: -100, y: -100 }}
-            whileInView={{ opacity: 1, x: 0, y: 0}}
-            transition={{ delay: i * 0.3, duration: 1.5, ease: "easeInOut"}}
-            viewport={{ once: true }}
-            className="text-center w-full bg-dark-2 border border-[#1F1F22] rounded-lg p-4">
-            <h2 className="text-[20px] font-bold gradient-text">{roadmap.title}</h2>
 
-            <div className="mt-4 space-y-4">
-              {roadmap.step}
+      <div className=" border-t border-white/40">
+        <div className="py-4 space-y-2">
+          <h1 className="gradient-text">Phase 1</h1>
+          
+          <div className="my-4 flex flex-col">
+            <div className="mb-2 flex items-start gap-2">
+              <img 
+                src="/assets/icons/checked-box.svg"
+                alt="checked"
+                className="w-6 h-6"
+              />
+              <p className="line-through">Socials X verified</p>
             </div>
-          </motion.div>
-        ))}
+            <div className="mb-2">
+              <img 
+                src="/assets/x-verified.jpeg"
+                className="w-full"
+              />
+            </div>
+          </div>
+          
+          <div className="flex items-start gap-2">
+            <img 
+              src="/assets/icons/checked-box.svg"
+              alt="checked"
+              className="w-6 h-6"
+            />
+            <p className="line-through">DEX Screener Pre-Paid</p>
+          </div>
+
+          <div className="flex items-start gap-2">
+            <img 
+              src="/assets/icons/checked-box.svg"
+              alt="checked"
+              className="w-6 h-6 invert-white"
+            />
+            <p>DEX Ads (Upon Raydium Migration)</p>
+          </div>
+
+          <div className="flex items-start gap-2">
+            <img 
+              src="/assets/icons/checked-box.svg"
+              alt="checked"
+              className="w-6 h-6 invert-white"
+            />
+            <p>Finder Trending (@100k MC)</p>
+          </div>
+        </div>
+
+        <hr className="border my-4" />
+        
+        <div className="py-4 space-y-2">
+          <h1 className="gradient-text">Phase 2</h1>
+          
+          <div className="flex items-start gap-2">
+            <img 
+              src="/assets/icons/checked-box.svg"
+              alt="checked"
+              className="w-6 h-6 invert-white"
+            />
+            <p>NFT Art Released</p>
+          </div>
+
+          <div className="flex items-start gap-2">
+            <img 
+              src="/assets/icons/checked-box.svg"
+              alt="checked"
+              className="w-6 h-6 invert-white"
+            />
+            <p>AMOG Leaderboard Released</p>
+          </div>
+          
+          <div className="flex items-start gap-2">
+            <img 
+              src="/assets/icons/checked-box.svg"
+              alt="checked"
+              className="w-6 h-6 invert-white"
+            />
+            <p>KOL Partnerships (3 pre-approved)</p>
+          </div>
+        </div>
+
+        <hr className="border my-4" />
+        
+        <div className="py-4 space-y-2">
+          <h1 className="gradient-text">Phase 3</h1>
+          
+          <div className="flex items-start gap-2">
+            <img 
+              src="/assets/icons/checked-box.svg"
+              alt="checked"
+              className="w-6 h-6 invert-white"
+            />
+            <p>NFT presale announcement</p>
+          </div>
+
+          <div className="flex items-start gap-2">
+            <img 
+              src="/assets/icons/checked-box.svg"
+              alt="checked"
+              className="w-6 h-6 invert-white"
+            />
+            <p>225-250MC Burn 10% (of Dev Wallet)</p>
+          </div>
+          
+          <div className="flex items-start gap-2">
+            <img 
+              src="/assets/icons/checked-box.svg"
+              alt="checked"
+              className="w-6 h-6 invert-white"
+            />
+            <p>pre-sample of merch (if you can get a mogged photo of clothes)</p>
+          </div>
+          
+          <div className="flex items-start gap-2">
+            <img 
+              src="/assets/icons/checked-box.svg"
+              alt="checked"
+              className="w-6 h-6 invert-white"
+            />
+            <p>More to come. Are you $AMOG?</p>
+          </div>
+        </div>
+        
       </div>
+      
+      <BackgroundBeams />
     </div>
   );
 };
