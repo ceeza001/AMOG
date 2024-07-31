@@ -62,6 +62,15 @@ const Roadmap = () => {
             />
             <p>Finder Trending (@100k MC)</p>
           </div>
+          
+          <div className="flex items-start gap-2">
+            <img 
+              src="/assets/icons/checked-box.svg"
+              alt="checked"
+              className="w-6 h-6 invert-white"
+            />
+            <p>Burn 2%</p>
+          </div>
         </div>
 
         <hr className="border my-4" />
@@ -95,6 +104,15 @@ const Roadmap = () => {
             />
             <p>KOL Partnerships (3 pre-approved)</p>
           </div>
+          
+          <div className="flex items-start gap-2">
+            <img 
+              src="/assets/icons/checked-box.svg"
+              alt="checked"
+              className="w-6 h-6 invert-white"
+            />
+            <p>Burn 3%</p>
+          </div>
         </div>
 
         <hr className="border my-4" />
@@ -117,7 +135,7 @@ const Roadmap = () => {
               alt="checked"
               className="w-6 h-6 invert-white"
             />
-            <p>225-250MC Burn 10% (of Dev Wallet)</p>
+            <p>Burn 5%</p>
           </div>
           
           <div className="flex items-start gap-2">
@@ -126,7 +144,7 @@ const Roadmap = () => {
               alt="checked"
               className="w-6 h-6 invert-white"
             />
-            <p>pre-sample of merch (if you can get a mogged photo of clothes)</p>
+            <p>pre-sample of merch</p>
           </div>
           
           <div className="flex items-start gap-2">
