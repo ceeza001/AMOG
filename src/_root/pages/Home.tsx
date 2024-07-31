@@ -12,7 +12,7 @@ const Home = () => {
         <Anticipate />
       </div>
 
-      <div className="my-[4rem] p-[1rem] md:px-[4rem]">
+      <div className="my-[4rem] mx-auto max-w-[50rem] p-[1rem] md:px-[4rem]">
         <Roadmap />
       </div>
 
