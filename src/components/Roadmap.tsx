@@ -69,7 +69,7 @@ const Roadmap = () => {
               alt="checked"
               className="w-6 h-6 invert-white"
             />
-            <p>Burn 2%</p>
+            <p>Burn 2% Of the Total Supply</p>
           </div>
         </div>
 
@@ -111,7 +111,7 @@ const Roadmap = () => {
               alt="checked"
               className="w-6 h-6 invert-white"
             />
-            <p>Burn 3%</p>
+            <p>Burn 3% Of the Total Supply</p>
           </div>
         </div>
 
@@ -135,7 +135,7 @@ const Roadmap = () => {
               alt="checked"
               className="w-6 h-6 invert-white"
             />
-            <p>Burn 5%</p>
+            <p>Burn 5% Of the Total Supply</p>
           </div>
           
           <div className="flex items-start gap-2">
