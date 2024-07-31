@@ -144,7 +144,7 @@ const Roadmap = () => {
               alt="checked"
               className="w-6 h-6 invert-white"
             />
-            <p>pre-sample of merch</p>
+            <p>Pre-sample Of Merch</p>
           </div>
           
           <div className="flex items-start gap-2">
