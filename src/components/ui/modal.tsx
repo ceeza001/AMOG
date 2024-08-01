@@ -1,7 +1,7 @@
 "use client";
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
-import React, {
+import {
   ReactNode,
   createContext,
   useContext,
@@ -80,7 +80,6 @@ export const ModalBody = ({
   }, [open]);
 
   const modalRef = useRef(null);
-  const { setOpen } = useModal();
   
   return (
     <AnimatePresence>
