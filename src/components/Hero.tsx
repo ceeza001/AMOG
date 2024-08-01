@@ -66,6 +66,8 @@ const Hero = () => {
           </div>
         </div>
       </div>
+
+      <Meteors number={20} />
     </div>
   );
 };
