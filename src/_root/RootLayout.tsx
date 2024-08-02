@@ -21,7 +21,7 @@ export const AudioPlaying = [
 
 const RootLayout = () => {
   const audioRef = useRef(new Audio(moggBg));
-  audioRef.current.volume = 0.05;
+  audioRef.current.volume = 0.08;
   audioRef.current.loop = true;
 
   const [isPlayingMusic, setIsPlayingMusic] = useState<boolean>(false);
@@ -94,7 +94,7 @@ const RootLayout = () => {
                   repeat: isPlayingMusic ? Infinity : 0,
                   repeatType: "loop",
                 }}
-                className={`${isPlayingMusic ? 'w-[3px] bg-primary-500' : 'w-[10px] bg-white'}  transition text-white `}
+                className={`${isPlayingMusic ? 'w-[3px] bg-primary-500' : 'w-[15px] bg-white'}  transition text-white `}
               />
             ))}
           </div>
