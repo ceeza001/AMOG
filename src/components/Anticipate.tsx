@@ -28,12 +28,16 @@ const Anticipate = () => {
           <div className="flex justify-between gap-2 w-full min-w-full">
             <Button
               borderRadius="15px"
-              className="min-w-[10rem] w-full h-[8rem] bg-dark-2 flex items-center justify-center p-4 border-primary-500/50">
-              <h1>MEME</h1>
+              className="w-full h-[8rem] bg-dark-2 flex items-center justify-center overflow-hidden border-primary-500/50">
+              <img 
+                src="/assets/mark.png"
+                alt="meme"
+                className="w-full h-full"
+              />
             </Button>
             <Button
               borderRadius="15px"
-              className="bg-dark-2 flex items-center justify-center min-w-[10rem] w-full p-4 border-primary-500/50">
+              className="bg-dark-2 flex items-center justify-center w-full p-8 border-primary-500/50">
               <h1>MEME</h1>
             </Button>
           </div>
@@ -79,7 +83,7 @@ const Anticipate = () => {
               borderRadius="15px"
               className="bg-dark-2 flex items-center justify-center w-full overflow-hidden border-2 border-primary-500/50">
               <img 
-                src="/assets/meme1.jpg"
+                src="/assets/bezos.png"
                 alt="meme"
                 className="w-full h-full"
               />

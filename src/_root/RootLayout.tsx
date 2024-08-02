@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Outlet, Link } from "react-router-dom";
-import moggBg from "@/assets/mogg_bg.mp3";
+import moggBg from "@/assets/mogg.mp3";
 import {
   Modal,
   ModalBody,
