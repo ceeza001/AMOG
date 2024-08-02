@@ -78,8 +78,8 @@ const RootLayout = () => {
 
           <div className="flex flex-col w-full">
             <h3 className="mb-4 font-bold text-white text-[20px]">Social Links</h3>
-            <Link to="/">Twitter</Link>
-            <Link to="/">Telegram</Link>
+            <Link to="https://x.com/AlphaMOGGS">Twitter</Link>
+            <Link to="https://t.me/AMOGofficial">Telegram</Link>
           </div>
         </div>
 

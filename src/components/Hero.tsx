@@ -45,7 +45,7 @@ const Hero = () => {
             <Link to="/" className="rounded-[25px] border bg-primary-500 text-black font-bold p-[0.8rem]">
               Buy $AMOG
             </Link>
-            <Link to="/">
+            <Link to="https://t.me/AMOGofficial">
                 <img 
                   src="/assets/icons/telegram.svg"
                   alt="telegram"
@@ -54,7 +54,7 @@ const Hero = () => {
                 />
               </Link>
 
-              <Link to="/" className="relative">
+              <Link to="https://x.com/alphamoggs" className="relative">
                 <span className="bg-white top-2 left-2 absolute z-[-1] h-[2rem] w-[2rem]" />
                 <img 
                   src="/assets/icons/x.svg"
