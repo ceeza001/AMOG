@@ -41,21 +41,32 @@ export function Modal({ children }: { children: ReactNode }) {
   return <ModalProvider>{children}</ModalProvider>;
 }
 
-export const ModalTrigger = ({
-  children,
-  className,
-}: {
+interface ModalTriggerProps {
   children: ReactNode;
   className?: string;
+  isPlayingMusic: boolean; // Prop indicating if the music is playing
+  closeModal: () => void; // Function to close the modal and handle music state
+}
+
+export const ModalTrigger: React.FC<ModalTriggerProps> = ({
+  children,
+  className,
+  isPlayingMusic,
+  closeModal,
 }) => {
   const { setOpen } = useModal();
+  
+  if (isPlayingMusic) {
+    setOpen(!open)
+  };
+  
   return (
     <button
       className={cn(
         "p-[0.8rem] bg-white rounded-md text-sm w-full text-black border border-gray-300",
         className
       )}
-      onClick={() => setOpen(!open)}
+      onClick={() => closeModal()} // Call the function passed from the parent
     >
       {children}
     </button>

@@ -6,7 +6,7 @@ import {
   ModalBody,
   ModalContent,
   ModalFooter,
-  ModalTrigger
+  ModalTrigger,
 } from "@/components/ui/modal";
 
 const RootLayout = () => {
@@ -28,8 +28,8 @@ const RootLayout = () => {
     };
   }, [isPlayingMusic]);
 
-  const startMusic = () => {
-    setIsPlayingMusic((prev) => !prev);
+  const closeModal = () => {
+    setIsPlayingMusic(!isPlayingMusic);
   };
 
   return (
@@ -49,13 +49,8 @@ const RootLayout = () => {
             </h4>
           </ModalContent>
           <ModalFooter>
-            <ModalTrigger>
-              <span
-                onClick={startMusic}
-                className="w-full h-full"
-              >
-                GOT IT
-              </span>
+            <ModalTrigger isPlayingMusic={isPlayingMusic} closeModal={closeModal}>
+              GOT IT
             </ModalTrigger>
           </ModalFooter>
         </ModalBody>
