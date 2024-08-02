@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Outlet, Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import moggBg from "@/assets/mogg.mp3";
 import {
   Modal,
@@ -8,6 +9,15 @@ import {
   ModalFooter,
   ModalTrigger,
 } from "@/components/ui/modal";
+
+export const AudioPlaying = [
+  { id: 1 },
+  { id: 2 },
+  { id: 3 },
+  { id: 4 },
+  { id: 5 },
+  { id: 6 },
+];
 
 const RootLayout = () => {
   const audioRef = useRef(new Audio(moggBg));
@@ -33,7 +43,7 @@ const RootLayout = () => {
   };
 
   return (
-    <div className="w-full">
+    <div className="w-full relative">
       <Modal>
         <ModalBody>
           <ModalContent>
@@ -57,6 +67,39 @@ const RootLayout = () => {
       </Modal>
 
       <Outlet />
+
+      <div className="fixed bottom-10 right-2 h-[4rem] px-4 w-[10rem] border border-dark-4 rounded-lg black-glassmorphism">
+        <div className="flex items-center w-full h-full gap-4">
+          <button
+            onClick={() => setIsPlayingMusic(!isPlayingMusic)}
+            className="w-[1.6rem] h-[1.6rem]"
+          >
+            <img
+              src={`/assets/icons/${!isPlayingMusic ? 'play' : 'pause'}.svg`}
+              alt="play"
+              className="invert-white w-full h-full transition"
+            />
+          </button>
+
+          <div className={`flex ${isPlayingMusic && 'gap-2'} items-center transition`}>
+            {AudioPlaying.map((stroke, i) => (
+              <motion.span
+                key={stroke.id}
+                animate={{
+                  height: isPlayingMusic ? [10, 20, 10] : 2,
+                }}
+                transition={{
+                  delay: isPlayingMusic ? i * 0.3 : 0,
+                  duration: isPlayingMusic ? 1.1 : 0,
+                  repeat: isPlayingMusic ? Infinity : 0,
+                  repeatType: "loop",
+                }}
+                className={`${isPlayingMusic ? 'w-[3px] bg-primary-500' : 'w-[10px] bg-white'}  transition text-white `}
+              />
+            ))}
+          </div>
+        </div>
+      </div>
 
       <footer className="mt-[4rem] p-[1rem] md:p-[2rem] bg-black">
         <h2 className="font-bold text-[40px] text-white">$AMOG</h2>
