@@ -94,7 +94,7 @@ const RootLayout = () => {
                   repeat: isPlayingMusic ? Infinity : 0,
                   repeatType: "loop",
                 }}
-                className={`${isPlayingMusic ? 'w-[3px] bg-primary-500' : 'w-[12px] bg-white'}  ease-in-out duration-300 text-white `}
+                className={`${isPlayingMusic ? 'w-[3px] bg-primary-500 duration-100' : 'w-[12px] bg-white duration-300'}  ease-in-out  text-white `}
               />
             ))}
           </div>
