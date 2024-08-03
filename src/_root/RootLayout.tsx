@@ -77,11 +77,11 @@ const RootLayout = () => {
             <img
               src={`/assets/icons/${!isPlayingMusic ? 'play' : 'pause'}.svg`}
               alt="play"
-              className="invert-white w-full h-full transition"
+              className="invert-white w-full h-full ease-in-out duration-300"
             />
           </button>
 
-          <div className={`flex ${isPlayingMusic && 'gap-2'} items-center transition`}>
+          <div className={`flex ${isPlayingMusic && 'gap-2'} items-center ease-in-out duration-300`}>
             {AudioPlaying.map((stroke, i) => (
               <motion.span
                 key={stroke.id}
@@ -94,7 +94,7 @@ const RootLayout = () => {
                   repeat: isPlayingMusic ? Infinity : 0,
                   repeatType: "loop",
                 }}
-                className={`${isPlayingMusic ? 'w-[3px] bg-primary-500' : 'w-[15px] bg-white'}  transition text-white `}
+                className={`${isPlayingMusic ? 'w-[3px] bg-primary-500' : 'w-[12px] bg-white'}  ease-in-out duration-300 text-white `}
               />
             ))}
           </div>
