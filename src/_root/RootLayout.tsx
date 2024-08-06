@@ -127,8 +127,8 @@ const RootLayout = () => {
         </div>
 
         <hr className="border my-2 mt-4" />
-        <div className="flex flex-col justify-center items-center text-center w-full">
-          <h2 className="text-[#FCD167]">CA:</h2>
+        <div className="break-words flex flex-col justify-center items-center text-center w-full">
+          <h2 className="mb-4 break-words max-w-[20rem] md:max-w-full text-[#FCD167]">CA: FQxRQsCnBFSwgGqKKyJVFkFV3qyQsKUp5am6c3Ntpump</h2>
           <p>©AMOG 2024</p>
         </div>
       </footer>

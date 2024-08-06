@@ -37,12 +37,14 @@ const Hero = () => {
           />
         </motion.div>
         
-        <div className="w-full select-none gap-2 flex flex-col items-center">
+        <div className="w-full space-y-2">
           <h1 className="text-white font-extrabold text-[24px]">Now On Solana</h1>
-          <p className="text-[#FCD167] my-4">CA:</p>
-
+          <p className="text-center break-words text-[#FCD167] my-4">
+            CA: FQxRQsCnBFSwgGqKKyJVFkFV3qyQsKUp5am6c3Ntpump
+          </p>
+        
           <div className="flex items-center gap-8 justify-between w-full">
-            <Link to="/" className="rounded-[25px] border bg-primary-500 text-black font-bold p-[0.8rem]">
+            <Link to="https://pump.fun/FQxRQsCnBFSwgGqKKyJVFkFV3qyQsKUp5am6c3Ntpump" className="rounded-[25px] border bg-primary-500 text-black font-bold p-[0.8rem]">
               Buy $AMOG
             </Link>
             <Link to="https://t.me/AMOGofficial">
