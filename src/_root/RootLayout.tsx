@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { Outlet, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import moggBg from "@/assets/mogg.mp3";
+
 import {
   Modal,
   ModalBody,
