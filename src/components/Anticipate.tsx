@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/moving-border";
 
-import mogg from "/assets/mogg.mp4"
+import mogg from "@/assets/mogg.mp4"
 const Anticipate = () => {
   return (
     <div className="p-[1rem] md:p-[4rem] w-full">
