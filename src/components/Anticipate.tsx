@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/moving-border";
 
+import mogg from "/assets/mogg.mp4"
 const Anticipate = () => {
   return (
     <div className="p-[1rem] md:p-[4rem] w-full">
@@ -95,6 +96,10 @@ const Anticipate = () => {
           </div>
         </div>
         
+      </div>
+
+      <div className="bg-primary-500/50 p-[2px] rounded-lg border border-dark-4 my-[4rem] mt-2 md:mt-[6rem] mx-auto max-w-[500px]">
+        <video src={mogg} autoPlay loop muted className="rounded-lg" />
       </div>
     </div>
   );
